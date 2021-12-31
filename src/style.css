@@ -35,6 +35,9 @@ hr {
   border: none;
   border-top: 1px solid white;
 }
+a {
+  text-decoration: none;
+}
 
 .click {
   border-radius: 3px;
@@ -59,4 +62,8 @@ hr {
 .btn-link-celsius {
   color: white;
   font-size: 18px;
+}
+.source {
+  text-align: center;
+  text-decoration: inherit;
 }
