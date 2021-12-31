@@ -1,0 +1,62 @@
+body {
+  background-color: white;
+}
+.container {
+  text-align: center;
+  font-family: Helvetica, sans-serif, Arial;
+  color: white;
+  max-width: 30.3%;
+  border: 9px solid #606470;
+  margin: 30px auto;
+  padding: 25px;
+  padding-top: 20px;
+  border-radius: 10px;
+  background: #113f67;
+}
+h1 {
+  font-size: 36px;
+  margin: 5px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid white;
+}
+
+.click {
+  border-radius: 3px;
+}
+
+.search-bar {
+  display: block;
+
+  padding: 4px;
+}
+
+.future-forecast {
+  font-size: 16px;
+  line-height: 250%;
+}
+.btn-link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.btn-link-celsius {
+  color: white;
+  font-size: 18px;
+}
