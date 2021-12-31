@@ -1,2 +1,2 @@
 # Amanda-Weather-App-Project
-still under construction
+is still under construction
