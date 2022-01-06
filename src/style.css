@@ -6,12 +6,16 @@ body {
   font-family: Helvetica, sans-serif, Arial;
   color: white;
   max-width: 30.3%;
-  border: 9px solid #606470;
+  border: 9px solid lightgray;
   margin: 30px auto;
   padding: 25px;
-  padding-top: 20px;
+  padding-top: 23px;
   border-radius: 10px;
-  background: #113f67;
+  background: linear-gradient(
+    171.8deg,
+    rgb(5, 111, 146) 13.5%,
+    rgb(6, 57, 84) 78.6%
+  );
 }
 h1 {
   font-size: 36px;
