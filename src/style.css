@@ -39,6 +39,10 @@ a {
   text-decoration: none;
 }
 
+.iconn {
+  margin: 10px auto -34px;
+}
+
 .click {
   border-radius: 3px;
 }
