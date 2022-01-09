@@ -40,18 +40,6 @@ if (minutes < 10) {
 
 h2.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes}`;
 
-/////////////////F/C conversion////////////////
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = `28°`;
-}
-function convertToCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = `-5°`;
-}
-
 /////////////////////show search city input and temp//////////////////////
 
 function showTemperature(response) {
@@ -59,7 +47,6 @@ function showTemperature(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -70,7 +57,11 @@ function showTemperature(response) {
   document.querySelector("#min").innerHTML = Math.round(
     response.data.main.temp_min
   );
+
   let iconElement = document.querySelector("#icon");
+
+  fahrenheitTemperature = response.data.main.temp;
+
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@4x.png`
@@ -89,7 +80,37 @@ function handleSubmit(event) {
   let city = document.querySelector("#form").value;
   search(city);
 }
+
+/////////////////F/C conversion////////////////
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let celsiusElement = document.querySelector("#temperature");
+  //add the active class the fahrenheit
+  celsius.classList.add("active");
+  fahrenheit.classList.remove("active");
+
+  let celsiusTemperature = (5 / 9) * (fahrenheitTemperature - 32);
+  celsiusElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+
+  fahrenheit.classList.add("active");
+  celsius.classList.remove("active");
+
+  let fahrenheitElement = document.querySelector("#temperature");
+  fahrenheitElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let fahrenheitTemperature = null;
+
 let form = document.querySelector("#search-bar");
 form.addEventListener("submit", handleSubmit);
 
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", displayCelsiusTemperature);
+
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", displayFahrenheitTemperature);
 search("Seattle");
