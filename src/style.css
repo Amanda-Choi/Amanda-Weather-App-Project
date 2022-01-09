@@ -69,13 +69,16 @@ a {
   padding: 4px;
 }
 
+
 .future-forecast {
   font-size: 16px;
   line-height: 250%;
 }
+.btn-link {
+  text-decoration: none;
+}
 
 .btn-link-celsius {
-  color: white;
   font-size: 18px;
 }
 
@@ -83,12 +86,4 @@ a {
   color: #393e46;
   cursor: default;
   font-size: 20px;
-}
-
-.linkable .active:hover {
-  text-decoration: none;
-}
-
-.source {
-  color: #0a58ca;
 }
