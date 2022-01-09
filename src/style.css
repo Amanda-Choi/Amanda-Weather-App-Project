@@ -1,13 +1,18 @@
 body {
   background-color: white;
 }
+
+.container-wrapper {
+  max-width: 30.3%;
+  margin: 30px auto;
+}
 .container {
   text-align: center;
   font-family: Helvetica, sans-serif, Arial;
   color: white;
-  max-width: 30.3%;
+
   border: 9px solid lightgray;
-  margin: 30px auto;
+
   padding: 25px;
   padding-top: 23px;
   border-radius: 10px;
@@ -19,7 +24,6 @@ body {
 }
 h1 {
   font-size: 36px;
-  margin: 5px;
 }
 
 h2 {
@@ -39,16 +43,17 @@ hr {
   border: none;
   border-top: 1px solid white;
 }
+
 a {
+  color: white;
   text-decoration: none;
 }
-
 .units {
   padding: 0px 5px;
 }
 .iconn {
   width: 200px;
-  margin: 10px auto -36px;
+  margin: 10px auto -34px;
 }
 
 .click {
@@ -68,18 +73,22 @@ a {
   font-size: 16px;
   line-height: 250%;
 }
-.btn-link {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-}
 
 .btn-link-celsius {
   color: white;
   font-size: 18px;
 }
+
+.linkable .active {
+  color: #393e46;
+  cursor: default;
+  font-size: 20px;
+}
+
+.linkable .active:hover {
+  text-decoration: none;
+}
+
 .source {
-  text-align: center;
-  text-decoration: inherit;
-  margin-top: -25px;
+  color: #0a58ca;
 }
