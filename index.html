@@ -20,26 +20,26 @@
   </head>
 
   <body>
+     <div class="container-wrapper">
     <div class="container">
+
       <div class="row">
         <div class="col-3">
-
           <form class="units" id="search-bar">
             <input type="search" id="form" placeholder="Search a city" />
-       
-      </div>  
-
+            </div>  
         <div class="col">
           <button class="click" type="search">
             <i class="fas fa-search"></i>
           </button>
              </form>
-</div>
-        <div class="col">
-          <button type="button" class="btn btn-link" id="fahrenheit">
-            <strong>°F</strong></button
-          >|<button type="button" class="btn btn-link-celsius" id="celsius">
-            °C
+             </div>
+        <div class="col linkable">
+          <button type="button" class="btn btn-link">
+           <a href="#" id="fahrenheit" class="active"><strong>°F</strong></a></button
+          >|<button type="button" class="btn btn-link-celsius">
+             <a href="#" id="celsius">
+            °C</a>
           </button>
         </div>
         </div>
