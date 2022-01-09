@@ -45,12 +45,9 @@ hr {
 }
 
 a {
-  color: white;
-  text-decoration: none;
+   text-decoration: none;
 }
-em {
-color: #0d6efd;
-}
+
 .units {
   padding: 0px 5px;
 }
