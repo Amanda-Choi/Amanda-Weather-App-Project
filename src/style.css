@@ -45,7 +45,8 @@ hr {
 }
 
 a {
-   text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .units {
@@ -88,5 +89,6 @@ a {
   font-size: 20px;
 }
 .source {
-  color: red;
+  color: #0d6efd;
 }
+
