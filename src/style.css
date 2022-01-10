@@ -62,7 +62,7 @@ a {
   border-radius: 4px;
   position: relative;
   top: -1px;
-  right: -6px;
+  right: 67px;
 }
 
 .search-bar {
@@ -81,6 +81,11 @@ a {
 
 .btn-link-celsius {
   font-size: 18px;
+}
+
+.linkable {
+  position: relative;
+  right: 24px;
 }
 
 .linkable .active {
