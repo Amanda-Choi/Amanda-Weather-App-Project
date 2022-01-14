@@ -19,126 +19,64 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
 
-  <body>
-     <div class="container-wrapper">
-    <div class="container">
-
-      <div class="row">
-        <div class="col">
-          <form class="units" id="search-bar">
-            <input type="search" id="form" placeholder="Search a city" />
-            </div>  
-        <div class="col">
-          <button class="click" type="search">
-            <i class="fas fa-search"></i>
-          </button>
-             </form>
-             </div>
-        <div class="col linkable">
-          <button type="button" class="btn btn-link">
-           <a href="#" id="fahrenheit" class="active"><strong>°F</strong></a></button
-          >|<button type="button" class="btn btn-link-celsius">
-             <a href="#" id="celsius">
-            °C</a>
-          </button>
-        </div>
-        </div>
-
-    <img
-        src=""
-        alt=""
-        class="iconn"
-        id="icon"
-        width="200px"></img>
-
-      <h1 id="city"></h1>
-
-      <h2 id="current-date"></h2>
-  <h3><span id="temperature"></span>°</h3>
-
-
-      <br />
-      <div class="row">
-        <div class="col data">
-          <strong>TODAY</strong> <br />
-         <span id="max"></span>° / <span id="min"></span>°
-        </div>
-
-        <div class="col data">
-          <strong> WIND </strong><br />
-          <span id="wind"></span> mph N
-        </div>
-        
-        <div class="col data">
-        <strong>HUMIDITY</strong><br />
-         <span id="humidity"></span>%
-        </div>
-      </div>
-<hr />
-
-      <div class="future-forecast">
+ <body>
+    <div class="container-wrapper">
+      <div class="container">
         <div class="row">
           <div class="col">
-            Mon
-            <img
-              src="images/Cloudy.png"
-              alt="Rainy"
-              width="50px"
-              height="50px"
-            />
-            43°|33°
-          </div>
-
-          <div class="col">
-            Tues <br />
-            <img
-              src="images/Sunbreaks.png"
-              alt="Rainy"
-              width="50px"
-              height="50px"
-            />
-            42°|32°
-          </div>
-
-          <div class="col">
-            Wed <br />
-            <img
-              src="images/Sunbreaks.png"
-              alt="Rainy"
-              width="50px"
-              height="50px"
-            />
-            45°|38°
-          </div>
-
-          <div class="col">
-            Thurs <br />
-            <img
-              src="images/Cloudy.png"
-              alt="Rainy"
-              width="50px"
-              height="50px"
-            />
-            41°|36°
-          </div>
-
-          <div class="col">
-            Fri <br />
-            <img
-              src="images/Rainy.png"
-              alt="Rainy"
-              width="50px"
-              height="50px"
-            />
-            41°|33°
-          </div>
-          
+            <form class="units" id="search-bar">
+              <input type="search" id="form" placeholder="Search a city" />
         </div>
+          <div class="col">
+            <button class="click" type="search" value="search">
+              <i class="fas fa-search"></i>
+            </button>
+               </form>
+          </div>
+          <div class="col linkable">
+            <button type="button" class="btn btn-link">
+              <a href="#" id="fahrenheit" class="active"
+                ><strong>°F</strong></a
+              ></button
+            >|<button type="button" class="btn btn-link-celsius">
+              <a href="#" id="celsius"> °C</a>
+            </button>
+          </div>
+        </div>
+
+        <img src="" alt="" class="iconn" id="icon" />
+        <h1 id="city"></h1>
+        <h2 id="current-date"></h2>
+        <h3><span id="temperature"></span>°</h3>
+        <br />
+        <div class="row">
+          <div class="col data">
+            <strong>CURRENT</strong><br />
+            <span id="current"></span>
+          </div>
+          <div class="col data">
+            <strong> WIND </strong><br />
+            <span id="wind"></span> mph N
+          </div>
+ <div class="col data">
+            <strong>HUMIDITY</strong><br />
+            <span id="humidity"></span>%
+          </div>
+        
+        </div>
+        <hr />
+
+        <div class="future-forecast" id="forecast"></div>
       </div>
-    </div>
-       <div>
-    <em> <a href = "https://github.com/Amanda-Choi/Amanda-Weather-App-Project" target="_blank" class="source">Open-source code</a></em>
-by Amanda Choi
+      <em>
+        <a
+          href="https://github.com/Amanda-Choi/Amanda-Weather-App-Project"
+          target="_blank"
+          class="source"
+          >Open-source code</a
+        ></em
+      >
+      by Amanda Choi
     </div>
     <script src="src/index.js"></script>
   </body>
