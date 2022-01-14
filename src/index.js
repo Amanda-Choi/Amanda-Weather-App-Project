@@ -51,7 +51,7 @@ function formatDay(timestamp) {
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
-  console.log(response.data);
+
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
@@ -97,7 +97,6 @@ function showTemperature(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-  console.log(response.data);
   document.querySelector("#current").innerHTML = response.data.weather[0].main;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
